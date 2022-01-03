@@ -23,7 +23,7 @@ const Clock = () => {
 
   useEffect(() => {
     const timer = setInterval(getTime, 1000);
-    const tick = setInterval(ticker, 1000);
+    const tick = setInterval(ticker, 500);
     return () => {
       clearInterval(timer);
       clearInterval(tick);
